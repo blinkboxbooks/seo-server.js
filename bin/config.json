@@ -3,6 +3,8 @@
   "loadImages": false,
   "verbose": true,
   "debug": false,
+  "logErrors": false,
+  "ignoreSSLErrors": true,
   "checkCompleteInterval": 10,
   "checkCompleteTimeDiff": 300,
   "checkCompleteTimeout": 10000
