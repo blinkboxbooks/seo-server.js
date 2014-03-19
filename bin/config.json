@@ -1,11 +1,12 @@
 {
 	"url": "http://client.apiengine.io/",
   "loadImages": false,
-  "verbose": true,
+  "verbose": false,
   "debug": false,
   "logErrors": false,
   "ignoreSSLErrors": true,
   "checkCompleteInterval": 10,
   "checkCompleteTimeDiff": 300,
-  "checkCompleteTimeout": 10000
+  "checkCompleteTimeout": 10000,
+  "maxProcesses": 5
 }
