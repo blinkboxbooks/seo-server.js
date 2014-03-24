@@ -8,5 +8,5 @@
   "checkCompleteInterval": 10,
   "checkCompleteTimeDiff": 300,
   "checkCompleteTimeout": 10000,
-  "maxProcesses": 5
+  "maxProcesses": 1
 }
