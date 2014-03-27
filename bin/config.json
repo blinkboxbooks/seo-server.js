@@ -4,7 +4,7 @@
   "verbose": false,
   "debug": false,
   "debugPhantom": false,
-  "logErrors": true,
+  "logErrors": false,
   "ignoreSSLErrors": true,
   "checkCompleteInterval": 10,
   "checkCompleteTimeDiff": 300,
