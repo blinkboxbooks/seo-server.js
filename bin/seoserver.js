@@ -8,7 +8,7 @@ var log = require('../lib/log');
 
 program
   .version('0.0.1')
-  .option('-p, --port <location>', 'Specifiy a port to run on')
+  .option('-p, --port <location>', 'Specify a port to run on')
 
 
 program
