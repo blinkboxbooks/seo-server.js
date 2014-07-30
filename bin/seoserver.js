@@ -1,10 +1,8 @@
 #!/usr/bin/env node
-
-
-
 var program = require('commander');
 var fs = require('fs');
 var forever = require('forever-monitor');
+var log = require('../lib/log');
 
 // require our seoserver npm package
 
@@ -21,7 +19,7 @@ program
       options: [program.port]
     });
     child.start();
-    console.log(__dirname, 'SeoServer successfully started');
+    log.info('SeoServer started in ' + __dirname);
   });
 
 program.parse(process.argv);
