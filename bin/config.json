@@ -1,7 +1,6 @@
 {
 	"url": "https://www.blinkboxbooks.com",
   "loadImages": false,
-  "verbose": false,
   "debug": false,
   "debugPhantom": false,
   "logErrors": false,
