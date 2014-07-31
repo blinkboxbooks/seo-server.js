@@ -19,7 +19,7 @@ program
       options: [program.port]
     });
     child.start();
-    log.info('SeoServer started in ' + __dirname);
+    log.info('[parent] SeoServer started in ' + __dirname);
   });
 
 program.parse(process.argv);
