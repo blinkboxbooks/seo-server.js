@@ -8,7 +8,7 @@
   "checkCompleteInterval": 10,
   "checkCompleteTimeDiff": 300,
   "checkCompleteTimeout": 10000,
-  "maxProcesses": 1,
+  "maxProcesses": 4,
   "phantomTimeout": 30000,
   "logFile": "./seoserver.log"
 }
