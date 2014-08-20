@@ -1,7 +1,6 @@
 {
-	"url": "http://client.apiengine.io/",
+	"url": "https://www.blinkboxbooks.com",
   "loadImages": false,
-  "verbose": false,
   "debug": false,
   "debugPhantom": false,
   "logErrors": false,
@@ -9,6 +8,7 @@
   "checkCompleteInterval": 10,
   "checkCompleteTimeDiff": 300,
   "checkCompleteTimeout": 10000,
-  "maxProcesses": 1,
-  "phantomTimeout": 30000
+  "maxProcesses": 4,
+  "phantomTimeout": 30000,
+  "logFile": "./seoserver.log"
 }
