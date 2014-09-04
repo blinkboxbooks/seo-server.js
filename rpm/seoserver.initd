@@ -1,0 +1,54 @@
+#!/bin/bash
+# chkconfig: - 99 10
+# description: seoserver
+
+# Source function library.      This creates the operating environment for the process to be started
+. /etc/rc.d/init.d/functions
+PATH="/usr/local/bin:${PATH}"
+SEOSERVER_USER=bbb_nodejs
+
+function stop {
+        killall node
+}
+
+function start {
+        daemon --user $NODEJS_USER "/usr/bin/node /var/www/seoserver/bin/seoserver.js >> /var/log/seoserver/seroserver.js.log 2>&1 &"
+}
+
+function restart {
+        stop
+        start
+}
+
+function status {
+        pid=$( pgrep -f app.js -u SEOSERVER_USER )
+        if [ "${pid}" != "" ]; then
+                echo "node is running (${pid})"
+                exit 0
+        else
+                echo "node is not running"
+                exit 1
+        fi
+}
+
+function usage {
+        echo "Usage $0 stop|start|restart|status"
+}
+
+case $1 in
+        stop)
+                stop
+        ;;
+        start)
+                start
+        ;;
+        restart)
+                restart
+        ;;
+        status)
+                status
+        ;;
+        *)
+                usage
+        ;;
+esac

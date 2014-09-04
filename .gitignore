@@ -1,3 +1,8 @@
-node_modules
+node_modules/
+dist/
+coverage/
+.tmp/
+.editorconfig
+.idea
 
 seoserver.log
