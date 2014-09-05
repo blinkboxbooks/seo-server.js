@@ -9,6 +9,7 @@ SSA_HOME=/vagrant/seo-server
 RPM_HOME=/home/vagrant/rpmbuild
 
 # initialse RPM structure
+rm -rf ~/rpmbuild
 rpmdev-setuptree
 
 cd $SSA_HOME
@@ -34,4 +35,4 @@ echo -e 'T3amcI7y@BbB\n' | setsid rpmbuild --sign -ba $RPM_HOME/SPECS/ssa.spec -
 cp $RPM_HOME/RPMS/noarch/seo-server-app-${SSA_VERSION}-${SSA_BUILD_NUMBER}.noarch.rpm $SSA_HOME/rpm
 
 # Show RPM summary
-rpm -qip $SSA_HOME/rpm/server-web-app-${SSA_VERSION}-${SSA_BUILD_NUMBER}.noarch.rpm
+rpm -qip $SSA_HOME/rpm/seo-server-app-${SSA_VERSION}-${SSA_BUILD_NUMBER}.noarch.rpm

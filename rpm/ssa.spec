@@ -38,7 +38,7 @@ Seo Server App based on express and NodeJS
 rm -rf %{buildroot}
 
 %files
-%defattr( 0644, bbb_seoserver, bbb_seoserver, 0755 )
+%defattr( 0644, bbb_nodejs, bbb_nodejs, 0755 )
 %attr(0755,root,root) %{_sysconfdir}/init.d/%{name}
 %{_localstatedir}/www/seoserver/*
 %{_localstatedir}/log/%{name}
@@ -46,8 +46,8 @@ rm -rf %{buildroot}
 
 %pre
 # Create the seoserver user and group (bbb UID/GID) but do not use useradd for seoserver
-/usr/bin/getent group bbb_seoserver >/dev/null || /usr/sbin/groupadd -g 2003 bbb_seoserver
-/usr/bin/getent passwd bbb_seoserver >/dev/null || /usr/sbin/useradd  -M -c "NodeJS on $(hostname -s)" -d /var/www/seoserver -g bbb_nodejs -u 2003 -s /bin/nologin bbb_seoserver
+/usr/bin/getent group bbb_nodejs >/dev/null || /usr/sbin/groupadd -g 2003 bbb_nodejs
+/usr/bin/getent passwd bbb_nodejs >/dev/null || /usr/sbin/useradd  -M -c "seoserver on $(hostname -s)" -d /var/www/seoserver -g bbb_nodejs -u 2003 -s /bin/nologin bbb_nodejs
 exit 0
 
 %post
