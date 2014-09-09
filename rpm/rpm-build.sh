@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script builds an RPM of the server web app within the web virtual machine and is
+# This script builds an RPM of the server web app within the web virtual machine and is 
 # designed to be triggered after the server web app has been built and the 'dist' folder has been generated
 
 source /home/vagrant/.bash_profile;
