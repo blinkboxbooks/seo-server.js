@@ -12,7 +12,7 @@ function stop {
 }
 
 function start {
-        daemon --user $NODEJS_USER "/usr/bin/node /var/www/seoserver/bin/seoserver.js >> /var/log/seoserver/seroserver.js.log 2>&1 &"
+        daemon --user $SEOSERVER_USER "/usr/bin/node /var/www/seoserver/bin/seoserver.js >> /var/log/seo-server-app/seoserver.js.log 2>&1 &"
 }
 
 function restart {
