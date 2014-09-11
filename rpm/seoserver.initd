@@ -4,15 +4,17 @@
 
 # Source function library.      This creates the operating environment for the process to be started
 . /etc/rc.d/init.d/functions
+
 PATH="/usr/local/bin:${PATH}"
 SEOSERVER_USER=bbb_nodejs
+SEOSERVER_PORT=3000
 
 function stop {
         killall node
 }
 
 function start {
-        daemon --user $SEOSERVER_USER "/usr/bin/node /var/www/seoserver/bin/seoserver.js >> /var/log/seo-server-app/seoserver.js.log 2>&1 &"
+        daemon --user $SEOSERVER_USER "/usr/bin/node /var/www/seoserver/bin/seoserver.js -p $SEOSERVER_PORT start >> /var/log/seo-server-app/seoserver.js.log 2>&1 &"
 }
 
 function restart {
