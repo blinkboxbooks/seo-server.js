@@ -10,8 +10,7 @@ SEOSERVER_USER=bbb_nodejs
 SEOSERVER_PORT=4000
 
 function stop {
-        daemon --user $SEOSERVER_USER "/usr/bin/node /var/www/seoserver/bin/seoserver.js stop"
-
+        pkill -9 -f seoserver.js -u $SEOSERVER_USER
 }
 
 function start {
