@@ -7,10 +7,11 @@
 
 PATH="/usr/local/bin:${PATH}"
 SEOSERVER_USER=bbb_nodejs
-SEOSERVER_PORT=3000
+SEOSERVER_PORT=4000
 
 function stop {
-        killall node
+        daemon --user $SEOSERVER_USER "/usr/bin/node /var/www/seoserver/bin/seoserver.js stop"
+
 }
 
 function start {
@@ -23,12 +24,12 @@ function restart {
 }
 
 function status {
-        pid=$( pgrep -f app.js -u SEOSERVER_USER )
+        pid=$( pgrep -f seoserver.js -u $SEOSERVER_USER )
         if [ "${pid}" != "" ]; then
-                echo "node is running (${pid})"
+                echo "seoserver is running (${pid})"
                 exit 0
         else
-                echo "node is not running"
+                echo "seoserver is not running"
                 exit 1
         fi
 }
