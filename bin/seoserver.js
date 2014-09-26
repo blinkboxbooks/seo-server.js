@@ -2,16 +2,12 @@
 
 'use strict';
 
-var program = require('commander');
-var forever = require('forever-monitor');
-var log = require('../lib/log');
-
-// require our seoserver npm package
+var program = require('commander'),
+		forever = require('forever-monitor');
 
 program
   .version('0.0.1')
   .option('-p, --port <location>', 'Specify a port to run on');
-
 
 program
   .command('start')
@@ -21,8 +17,6 @@ program
       options: [program.port]
     });
     child.start();
-    log.info('[parent] SeoServer started in ' + __dirname);
   });
 
 program.parse(process.argv);
-
