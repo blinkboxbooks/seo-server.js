@@ -1,6 +1,8 @@
 #!/usr/bin/env node
+
+'use strict';
+
 var program = require('commander');
-var fs = require('fs');
 var forever = require('forever-monitor');
 var log = require('../lib/log');
 
@@ -8,7 +10,7 @@ var log = require('../lib/log');
 
 program
   .version('0.0.1')
-  .option('-p, --port <location>', 'Specify a port to run on')
+  .option('-p, --port <location>', 'Specify a port to run on');
 
 
 program

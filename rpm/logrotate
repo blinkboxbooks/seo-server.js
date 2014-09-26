@@ -1,0 +1,9 @@
+/var/log/seoserver/*log {
+    missingok
+    notifempty
+    compress
+    rotate 30
+    daily
+    copytruncate
+    dateext
+}
