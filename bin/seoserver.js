@@ -2,8 +2,8 @@
 
 'use strict';
 
-var program = require('commander'),
-		forever = require('forever-monitor');
+var program = require('commander');
+var forever = require('forever-monitor');
 
 program
   .version('0.0.1')
