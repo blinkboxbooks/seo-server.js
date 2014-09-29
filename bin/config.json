@@ -10,5 +10,8 @@
   "checkCompleteTimeout": 10000,
   "maxProcesses": 4,
   "phantomTimeout": 30000,
-  "logFile": "./seoserver.log"
+  "graylog": {
+    "host": "",
+    "port": 9602
+  }
 }
