@@ -68,6 +68,8 @@ module.exports = function (grunt) {
     mochaTest: {
       test: {
         options: {
+          // Give PhantomJS process ample time to load the URL and return the result:
+          timeout: 5000,
           reporter: 'spec',
           // Require blanket wrapper here to instrument other required
           // files on the fly.
@@ -96,10 +98,10 @@ module.exports = function (grunt) {
     }
   });
 
-	grunt.registerTask('test', [
-		'jshint',
-		'mochaTest'
-	]);
+  grunt.registerTask('test', [
+    'jshint',
+    'mochaTest'
+  ]);
 
   grunt.registerTask('build', [
     'jshint',
