@@ -1,9 +1,6 @@
 {
-	"url": "https://www.blinkboxbooks.com",
+  "url": "https://www.blinkboxbooks.com",
   "loadImages": false,
-  "debug": false,
-  "debugPhantom": false,
-  "logErrors": false,
   "ignoreSSLErrors": true,
   "checkCompleteInterval": 10,
   "checkCompleteTimeDiff": 300,
