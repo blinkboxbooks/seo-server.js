@@ -10,7 +10,7 @@ License: Various
 Vendor: blinkbox books
 BuildArch: x86_64
 BuildRoot: %{_tmppath}/%{name}-buildroot
-Requires: nodejs >= 0.10.21
+Requires: nodejs >= 0.10.21, freetype, fontconfig
 
 %description
 Seo Server App based on express and NodeJS
