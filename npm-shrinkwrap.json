@@ -1,0 +1,1530 @@
+{
+  "name": "seoserver",
+  "version": "1.7.1",
+  "dependencies": {
+    "commander": {
+      "version": "1.0.2",
+      "from": "commander@1.0.2",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/commander/-/commander-1.0.2.tgz",
+      "dependencies": {
+        "keypress": {
+          "version": "0.1.0",
+          "from": "keypress@0.1.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/keypress/-/keypress-0.1.0.tgz"
+        }
+      }
+    },
+    "forever-monitor": {
+      "version": "1.1.0",
+      "from": "forever-monitor@1.1.0",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/forever-monitor/-/forever-monitor-1.1.0.tgz",
+      "dependencies": {
+        "broadway": {
+          "version": "0.2.10",
+          "from": "broadway@0.2.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/broadway/-/broadway-0.2.10.tgz",
+          "dependencies": {
+            "cliff": {
+              "version": "0.1.8",
+              "from": "cliff@0.1.8",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/cliff/-/cliff-0.1.8.tgz",
+              "dependencies": {
+                "colors": {
+                  "version": "0.6.2",
+                  "from": "colors@0.6.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/colors/-/colors-0.6.2.tgz"
+                },
+                "eyes": {
+                  "version": "0.1.8",
+                  "from": "eyes@0.1.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/eyes/-/eyes-0.1.8.tgz"
+                },
+                "winston": {
+                  "version": "0.6.2",
+                  "from": "winston@0.6.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/winston/-/winston-0.6.2.tgz",
+                  "dependencies": {
+                    "async": {
+                      "version": "0.1.22",
+                      "from": "async@0.1.x",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/async/-/async-0.1.22.tgz"
+                    },
+                    "cycle": {
+                      "version": "1.0.3",
+                      "from": "cycle@1.0.x",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/cycle/-/cycle-1.0.3.tgz"
+                    },
+                    "pkginfo": {
+                      "version": "0.2.3",
+                      "from": "pkginfo@0.2.x",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/pkginfo/-/pkginfo-0.2.3.tgz"
+                    },
+                    "request": {
+                      "version": "2.9.203",
+                      "from": "request@2.9.x",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/request/-/request-2.9.203.tgz"
+                    },
+                    "stack-trace": {
+                      "version": "0.0.9",
+                      "from": "stack-trace@0.0.x",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/stack-trace/-/stack-trace-0.0.9.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "eventemitter2": {
+              "version": "0.4.14",
+              "from": "eventemitter2@0.4.14",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/eventemitter2/-/eventemitter2-0.4.14.tgz"
+            },
+            "nconf": {
+              "version": "0.6.9",
+              "from": "nconf@0.6.9",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/nconf/-/nconf-0.6.9.tgz",
+              "dependencies": {
+                "async": {
+                  "version": "0.2.9",
+                  "from": "async@0.2.9",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/async/-/async-0.2.9.tgz"
+                },
+                "ini": {
+                  "version": "1.3.0",
+                  "from": "ini@1.x.x"
+                },
+                "optimist": {
+                  "version": "0.6.0",
+                  "from": "optimist@0.6.0",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/optimist/-/optimist-0.6.0.tgz",
+                  "dependencies": {
+                    "wordwrap": {
+                      "version": "0.0.2",
+                      "from": "wordwrap@~0.0.2",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/wordwrap/-/wordwrap-0.0.2.tgz"
+                    },
+                    "minimist": {
+                      "version": "0.0.10",
+                      "from": "minimist@~0.0.1",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/minimist/-/minimist-0.0.10.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "winston": {
+              "version": "0.7.2",
+              "from": "winston@0.7.2",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/winston/-/winston-0.7.2.tgz",
+              "dependencies": {
+                "async": {
+                  "version": "0.2.10",
+                  "from": "async@0.2.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/async/-/async-0.2.10.tgz"
+                },
+                "colors": {
+                  "version": "0.6.2",
+                  "from": "colors@0.6.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/colors/-/colors-0.6.2.tgz"
+                },
+                "cycle": {
+                  "version": "1.0.3",
+                  "from": "cycle@1.0.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/cycle/-/cycle-1.0.3.tgz"
+                },
+                "eyes": {
+                  "version": "0.1.8",
+                  "from": "eyes@0.1.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/eyes/-/eyes-0.1.8.tgz"
+                },
+                "request": {
+                  "version": "2.16.6",
+                  "from": "request@2.16.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/request/-/request-2.16.6.tgz",
+                  "dependencies": {
+                    "form-data": {
+                      "version": "0.0.10",
+                      "from": "form-data@~0.0.3",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/form-data/-/form-data-0.0.10.tgz",
+                      "dependencies": {
+                        "combined-stream": {
+                          "version": "0.0.7",
+                          "from": "combined-stream@~0.0.4",
+                          "dependencies": {
+                            "delayed-stream": {
+                              "version": "0.0.5",
+                              "from": "delayed-stream@0.0.5"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "mime": {
+                      "version": "1.2.11",
+                      "from": "mime@~1.2.7",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mime/-/mime-1.2.11.tgz"
+                    },
+                    "hawk": {
+                      "version": "0.10.2",
+                      "from": "hawk@~0.10.2",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/hawk/-/hawk-0.10.2.tgz",
+                      "dependencies": {
+                        "hoek": {
+                          "version": "0.7.6",
+                          "from": "hoek@0.7.x",
+                          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/hoek/-/hoek-0.7.6.tgz"
+                        },
+                        "boom": {
+                          "version": "0.3.8",
+                          "from": "boom@0.3.x",
+                          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/boom/-/boom-0.3.8.tgz"
+                        },
+                        "cryptiles": {
+                          "version": "0.1.3",
+                          "from": "cryptiles@0.1.x",
+                          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/cryptiles/-/cryptiles-0.1.3.tgz"
+                        },
+                        "sntp": {
+                          "version": "0.1.4",
+                          "from": "sntp@0.1.x",
+                          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/sntp/-/sntp-0.1.4.tgz"
+                        }
+                      }
+                    },
+                    "node-uuid": {
+                      "version": "1.4.1",
+                      "from": "node-uuid@~1.4.0"
+                    },
+                    "cookie-jar": {
+                      "version": "0.2.0",
+                      "from": "cookie-jar@~0.2.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/cookie-jar/-/cookie-jar-0.2.0.tgz"
+                    },
+                    "aws-sign": {
+                      "version": "0.2.0",
+                      "from": "aws-sign@~0.2.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/aws-sign/-/aws-sign-0.2.0.tgz"
+                    },
+                    "oauth-sign": {
+                      "version": "0.2.0",
+                      "from": "oauth-sign@~0.2.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/oauth-sign/-/oauth-sign-0.2.0.tgz"
+                    },
+                    "forever-agent": {
+                      "version": "0.2.0",
+                      "from": "forever-agent@~0.2.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/forever-agent/-/forever-agent-0.2.0.tgz"
+                    },
+                    "tunnel-agent": {
+                      "version": "0.2.0",
+                      "from": "tunnel-agent@~0.2.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/tunnel-agent/-/tunnel-agent-0.2.0.tgz"
+                    },
+                    "json-stringify-safe": {
+                      "version": "3.0.0",
+                      "from": "json-stringify-safe@~3.0.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/json-stringify-safe/-/json-stringify-safe-3.0.0.tgz"
+                    },
+                    "qs": {
+                      "version": "0.5.6",
+                      "from": "qs@~0.5.4",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/qs/-/qs-0.5.6.tgz"
+                    }
+                  }
+                },
+                "stack-trace": {
+                  "version": "0.0.9",
+                  "from": "stack-trace@0.0.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/stack-trace/-/stack-trace-0.0.9.tgz"
+                }
+              }
+            },
+            "utile": {
+              "version": "0.2.1",
+              "from": "utile@0.2.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/utile/-/utile-0.2.1.tgz",
+              "dependencies": {
+                "async": {
+                  "version": "0.2.10",
+                  "from": "async@~0.2.9",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/async/-/async-0.2.10.tgz"
+                },
+                "deep-equal": {
+                  "version": "0.2.1",
+                  "from": "deep-equal@*",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/deep-equal/-/deep-equal-0.2.1.tgz"
+                },
+                "i": {
+                  "version": "0.3.2",
+                  "from": "i@0.3.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/i/-/i-0.3.2.tgz"
+                },
+                "mkdirp": {
+                  "version": "0.5.0",
+                  "from": "mkdirp@0.x.x",
+                  "dependencies": {
+                    "minimist": {
+                      "version": "0.0.8",
+                      "from": "minimist@0.0.8"
+                    }
+                  }
+                },
+                "ncp": {
+                  "version": "0.4.2",
+                  "from": "ncp@0.4.x",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/ncp/-/ncp-0.4.2.tgz"
+                },
+                "rimraf": {
+                  "version": "2.2.8",
+                  "from": "rimraf@2.x.x"
+                }
+              }
+            }
+          }
+        },
+        "minimatch": {
+          "version": "0.0.5",
+          "from": "minimatch@0.0.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/minimatch/-/minimatch-0.0.5.tgz",
+          "dependencies": {
+            "lru-cache": {
+              "version": "1.0.6",
+              "from": "lru-cache@~1.0.2",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/lru-cache/-/lru-cache-1.0.6.tgz"
+            }
+          }
+        },
+        "pkginfo": {
+          "version": "0.3.0",
+          "from": "pkginfo@0.x.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/pkginfo/-/pkginfo-0.3.0.tgz"
+        },
+        "ps-tree": {
+          "version": "0.0.3",
+          "from": "ps-tree@0.0.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/ps-tree/-/ps-tree-0.0.3.tgz",
+          "dependencies": {
+            "event-stream": {
+              "version": "0.5.3",
+              "from": "event-stream@~0.5",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/event-stream/-/event-stream-0.5.3.tgz",
+              "dependencies": {
+                "optimist": {
+                  "version": "0.2.8",
+                  "from": "optimist@0.2",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/optimist/-/optimist-0.2.8.tgz",
+                  "dependencies": {
+                    "wordwrap": {
+                      "version": "0.0.2",
+                      "from": "wordwrap@>=0.0.1 <0.1.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/wordwrap/-/wordwrap-0.0.2.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "watch": {
+          "version": "0.5.1",
+          "from": "watch@0.5.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/watch/-/watch-0.5.1.tgz"
+        },
+        "utile": {
+          "version": "0.1.7",
+          "from": "utile@0.1.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/utile/-/utile-0.1.7.tgz",
+          "dependencies": {
+            "async": {
+              "version": "0.1.22",
+              "from": "async@0.1.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/async/-/async-0.1.22.tgz"
+            },
+            "deep-equal": {
+              "version": "0.2.1",
+              "from": "deep-equal@*",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/deep-equal/-/deep-equal-0.2.1.tgz"
+            },
+            "i": {
+              "version": "0.3.2",
+              "from": "i@0.3.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/i/-/i-0.3.2.tgz"
+            },
+            "mkdirp": {
+              "version": "0.5.0",
+              "from": "mkdirp@0.x.x",
+              "dependencies": {
+                "minimist": {
+                  "version": "0.0.8",
+                  "from": "minimist@0.0.8"
+                }
+              }
+            },
+            "ncp": {
+              "version": "0.2.7",
+              "from": "ncp@0.2.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/ncp/-/ncp-0.2.7.tgz"
+            },
+            "rimraf": {
+              "version": "1.0.9",
+              "from": "rimraf@1.x.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/rimraf/-/rimraf-1.0.9.tgz"
+            }
+          }
+        }
+      }
+    },
+    "express": {
+      "version": "3.0.0",
+      "from": "express@3.0.0",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/express/-/express-3.0.0.tgz",
+      "dependencies": {
+        "connect": {
+          "version": "2.6.0",
+          "from": "connect@2.6.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/connect/-/connect-2.6.0.tgz",
+          "dependencies": {
+            "qs": {
+              "version": "0.5.1",
+              "from": "qs@0.5.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/qs/-/qs-0.5.1.tgz"
+            },
+            "formidable": {
+              "version": "1.0.11",
+              "from": "formidable@1.0.11",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/formidable/-/formidable-1.0.11.tgz"
+            },
+            "bytes": {
+              "version": "0.1.0",
+              "from": "bytes@0.1.0",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/bytes/-/bytes-0.1.0.tgz"
+            },
+            "send": {
+              "version": "0.0.4",
+              "from": "send@0.0.4",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/send/-/send-0.0.4.tgz",
+              "dependencies": {
+                "mime": {
+                  "version": "1.2.6",
+                  "from": "mime@1.2.6",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mime/-/mime-1.2.6.tgz"
+                }
+              }
+            },
+            "pause": {
+              "version": "0.0.1",
+              "from": "pause@0.0.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/pause/-/pause-0.0.1.tgz"
+            }
+          }
+        },
+        "commander": {
+          "version": "0.6.1",
+          "from": "commander@0.6.1",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/commander/-/commander-0.6.1.tgz"
+        },
+        "range-parser": {
+          "version": "0.0.4",
+          "from": "range-parser@0.0.4",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/range-parser/-/range-parser-0.0.4.tgz"
+        },
+        "mkdirp": {
+          "version": "0.3.3",
+          "from": "mkdirp@0.3.3",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mkdirp/-/mkdirp-0.3.3.tgz"
+        },
+        "cookie": {
+          "version": "0.0.4",
+          "from": "cookie@0.0.4",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/cookie/-/cookie-0.0.4.tgz"
+        },
+        "crc": {
+          "version": "0.2.0",
+          "from": "crc@0.2.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/crc/-/crc-0.2.0.tgz"
+        },
+        "fresh": {
+          "version": "0.1.0",
+          "from": "fresh@0.1.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/fresh/-/fresh-0.1.0.tgz"
+        },
+        "methods": {
+          "version": "0.0.1",
+          "from": "methods@0.0.1",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/methods/-/methods-0.0.1.tgz"
+        },
+        "send": {
+          "version": "0.1.0",
+          "from": "send@0.1.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/send/-/send-0.1.0.tgz",
+          "dependencies": {
+            "mime": {
+              "version": "1.2.6",
+              "from": "mime@1.2.6",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mime/-/mime-1.2.6.tgz"
+            }
+          }
+        },
+        "debug": {
+          "version": "2.1.0",
+          "from": "debug@*",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/debug/-/debug-2.1.0.tgz",
+          "dependencies": {
+            "ms": {
+              "version": "0.6.2",
+              "from": "ms@0.6.2",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/ms/-/ms-0.6.2.tgz"
+            }
+          }
+        }
+      }
+    },
+    "finished": {
+      "version": "1.2.2",
+      "from": "finished@1.2.2",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/finished/-/finished-1.2.2.tgz",
+      "dependencies": {
+        "ee-first": {
+          "version": "1.0.3",
+          "from": "ee-first@1.0.3",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/ee-first/-/ee-first-1.0.3.tgz"
+        }
+      }
+    },
+    "graylog2": {
+      "version": "0.1.3",
+      "from": "graylog2@0.1.3",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/graylog2/-/graylog2-0.1.3.tgz"
+    },
+    "phantomjs": {
+      "version": "1.9.12",
+      "from": "phantomjs@1.9.12",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/phantomjs/-/phantomjs-1.9.12.tgz",
+      "dependencies": {
+        "adm-zip": {
+          "version": "0.4.4",
+          "from": "adm-zip@0.4.4"
+        },
+        "kew": {
+          "version": "0.4.0",
+          "from": "kew@0.4.0"
+        },
+        "ncp": {
+          "version": "1.0.1",
+          "from": "ncp@~1.0.1"
+        },
+        "npmconf": {
+          "version": "2.0.9",
+          "from": "npmconf@2.0.9",
+          "dependencies": {
+            "config-chain": {
+              "version": "1.1.8",
+              "from": "config-chain@~1.1.8",
+              "dependencies": {
+                "proto-list": {
+                  "version": "1.2.3",
+                  "from": "proto-list@~1.2.1"
+                }
+              }
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@~2.0.0"
+            },
+            "ini": {
+              "version": "1.3.0",
+              "from": "ini@^1.2.0"
+            },
+            "nopt": {
+              "version": "3.0.1",
+              "from": "nopt@~3.0.1",
+              "dependencies": {
+                "abbrev": {
+                  "version": "1.0.5",
+                  "from": "abbrev@1"
+                }
+              }
+            },
+            "once": {
+              "version": "1.3.1",
+              "from": "once@~1.3.0",
+              "dependencies": {
+                "wrappy": {
+                  "version": "1.0.1",
+                  "from": "wrappy@1"
+                }
+              }
+            },
+            "osenv": {
+              "version": "0.1.0",
+              "from": "osenv@^0.1.0"
+            },
+            "semver": {
+              "version": "4.1.0",
+              "from": "semver@2 || 3 || 4"
+            },
+            "uid-number": {
+              "version": "0.0.5",
+              "from": "uid-number@0.0.5"
+            }
+          }
+        },
+        "mkdirp": {
+          "version": "0.5.0",
+          "from": "mkdirp@0.5.0",
+          "dependencies": {
+            "minimist": {
+              "version": "0.0.8",
+              "from": "minimist@0.0.8"
+            }
+          }
+        },
+        "progress": {
+          "version": "1.1.8",
+          "from": "progress@1.1.8"
+        },
+        "request": {
+          "version": "2.42.0",
+          "from": "request@2.42.0",
+          "dependencies": {
+            "bl": {
+              "version": "0.9.3",
+              "from": "bl@~0.9.0",
+              "dependencies": {
+                "readable-stream": {
+                  "version": "1.0.33",
+                  "from": "readable-stream@~1.0.26",
+                  "dependencies": {
+                    "core-util-is": {
+                      "version": "1.0.1",
+                      "from": "core-util-is@~1.0.0"
+                    },
+                    "isarray": {
+                      "version": "0.0.1",
+                      "from": "isarray@0.0.1"
+                    },
+                    "string_decoder": {
+                      "version": "0.10.31",
+                      "from": "string_decoder@~0.10.x"
+                    },
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@~2.0.1"
+                    }
+                  }
+                }
+              }
+            },
+            "caseless": {
+              "version": "0.6.0",
+              "from": "caseless@~0.6.0"
+            },
+            "forever-agent": {
+              "version": "0.5.2",
+              "from": "forever-agent@~0.5.0"
+            },
+            "qs": {
+              "version": "1.2.2",
+              "from": "qs@~1.2.0"
+            },
+            "json-stringify-safe": {
+              "version": "5.0.0",
+              "from": "json-stringify-safe@~5.0.0"
+            },
+            "mime-types": {
+              "version": "1.0.2",
+              "from": "mime-types@~1.0.1"
+            },
+            "node-uuid": {
+              "version": "1.4.1",
+              "from": "node-uuid@~1.4.0"
+            },
+            "tunnel-agent": {
+              "version": "0.4.0",
+              "from": "tunnel-agent@~0.4.0"
+            },
+            "tough-cookie": {
+              "version": "0.12.1",
+              "from": "tough-cookie@>=0.12.0",
+              "dependencies": {
+                "punycode": {
+                  "version": "1.3.2",
+                  "from": "punycode@>=0.2.0"
+                }
+              }
+            },
+            "form-data": {
+              "version": "0.1.4",
+              "from": "form-data@~0.1.0",
+              "dependencies": {
+                "combined-stream": {
+                  "version": "0.0.7",
+                  "from": "combined-stream@~0.0.4",
+                  "dependencies": {
+                    "delayed-stream": {
+                      "version": "0.0.5",
+                      "from": "delayed-stream@0.0.5"
+                    }
+                  }
+                },
+                "mime": {
+                  "version": "1.2.11",
+                  "from": "mime@~1.2.11"
+                },
+                "async": {
+                  "version": "0.9.0",
+                  "from": "async@~0.9.0"
+                }
+              }
+            },
+            "http-signature": {
+              "version": "0.10.0",
+              "from": "http-signature@~0.10.0",
+              "dependencies": {
+                "assert-plus": {
+                  "version": "0.1.2",
+                  "from": "assert-plus@0.1.2"
+                },
+                "asn1": {
+                  "version": "0.1.11",
+                  "from": "asn1@0.1.11"
+                },
+                "ctype": {
+                  "version": "0.5.2",
+                  "from": "ctype@0.5.2"
+                }
+              }
+            },
+            "oauth-sign": {
+              "version": "0.4.0",
+              "from": "oauth-sign@~0.4.0"
+            },
+            "hawk": {
+              "version": "1.1.1",
+              "from": "hawk@1.1.1",
+              "dependencies": {
+                "hoek": {
+                  "version": "0.9.1",
+                  "from": "hoek@0.9.x"
+                },
+                "boom": {
+                  "version": "0.4.2",
+                  "from": "boom@0.4.x"
+                },
+                "cryptiles": {
+                  "version": "0.2.2",
+                  "from": "cryptiles@0.2.x"
+                },
+                "sntp": {
+                  "version": "0.2.4",
+                  "from": "sntp@0.2.x"
+                }
+              }
+            },
+            "aws-sign2": {
+              "version": "0.5.0",
+              "from": "aws-sign2@~0.5.0"
+            },
+            "stringstream": {
+              "version": "0.0.4",
+              "from": "stringstream@~0.0.4"
+            }
+          }
+        },
+        "request-progress": {
+          "version": "0.3.1",
+          "from": "request-progress@0.3.1",
+          "dependencies": {
+            "throttleit": {
+              "version": "0.0.2",
+              "from": "throttleit@~0.0.2"
+            }
+          }
+        },
+        "rimraf": {
+          "version": "2.2.8",
+          "from": "rimraf@~2.2.8"
+        },
+        "which": {
+          "version": "1.0.5",
+          "from": "which@~1.0.5"
+        }
+      }
+    },
+    "grunt-contrib-copy": {
+      "version": "0.5.0",
+      "from": "grunt-contrib-copy@0.5.0",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/grunt-contrib-copy/-/grunt-contrib-copy-0.5.0.tgz"
+    },
+    "jit-grunt": {
+      "version": "0.3.2",
+      "from": "jit-grunt@0.3.2",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/jit-grunt/-/jit-grunt-0.3.2.tgz"
+    },
+    "mockery": {
+      "version": "1.4.0",
+      "from": "mockery@1.4.0",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mockery/-/mockery-1.4.0.tgz"
+    },
+    "should": {
+      "version": "3.3.1",
+      "from": "should@3.3.1",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/should/-/should-3.3.1.tgz"
+    },
+    "grunt-contrib-clean": {
+      "version": "0.5.0",
+      "from": "grunt-contrib-clean@0.5.0",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/grunt-contrib-clean/-/grunt-contrib-clean-0.5.0.tgz",
+      "dependencies": {
+        "rimraf": {
+          "version": "2.2.8",
+          "from": "rimraf@~2.2.1"
+        }
+      }
+    },
+    "nock": {
+      "version": "0.28.2",
+      "from": "nock@0.28.2",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/nock/-/nock-0.28.2.tgz",
+      "dependencies": {
+        "propagate": {
+          "version": "0.2.2",
+          "from": "propagate@0.2.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/propagate/-/propagate-0.2.2.tgz"
+        }
+      }
+    },
+    "blanket": {
+      "version": "1.1.6",
+      "from": "blanket@1.1.6",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/blanket/-/blanket-1.1.6.tgz",
+      "dependencies": {
+        "esprima": {
+          "version": "1.0.4",
+          "from": "esprima@~1.0.2",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/esprima/-/esprima-1.0.4.tgz"
+        },
+        "falafel": {
+          "version": "0.1.6",
+          "from": "falafel@~0.1.6",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/falafel/-/falafel-0.1.6.tgz"
+        },
+        "xtend": {
+          "version": "2.1.2",
+          "from": "xtend@~2.1.1",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/xtend/-/xtend-2.1.2.tgz",
+          "dependencies": {
+            "object-keys": {
+              "version": "0.4.0",
+              "from": "object-keys@~0.4.0",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/object-keys/-/object-keys-0.4.0.tgz"
+            }
+          }
+        }
+      }
+    },
+    "sinon": {
+      "version": "1.10.2",
+      "from": "sinon@1.10.2",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/sinon/-/sinon-1.10.2.tgz",
+      "dependencies": {
+        "formatio": {
+          "version": "1.0.2",
+          "from": "formatio@~1.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/formatio/-/formatio-1.0.2.tgz",
+          "dependencies": {
+            "samsam": {
+              "version": "1.1.1",
+              "from": "samsam@~1.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/samsam/-/samsam-1.1.1.tgz"
+            }
+          }
+        },
+        "util": {
+          "version": "0.10.3",
+          "from": "util@>=0.10.3 <1",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/util/-/util-0.10.3.tgz",
+          "dependencies": {
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@2.0.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/inherits/-/inherits-2.0.1.tgz"
+            }
+          }
+        }
+      }
+    },
+    "mocha": {
+      "version": "1.20.1",
+      "from": "mocha@1.20.1",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mocha/-/mocha-1.20.1.tgz",
+      "dependencies": {
+        "commander": {
+          "version": "2.0.0",
+          "from": "commander@2.0.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/commander/-/commander-2.0.0.tgz"
+        },
+        "growl": {
+          "version": "1.7.0",
+          "from": "growl@1.7.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/growl/-/growl-1.7.0.tgz"
+        },
+        "jade": {
+          "version": "0.26.3",
+          "from": "jade@0.26.3",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/jade/-/jade-0.26.3.tgz",
+          "dependencies": {
+            "commander": {
+              "version": "0.6.1",
+              "from": "commander@0.6.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/commander/-/commander-0.6.1.tgz"
+            },
+            "mkdirp": {
+              "version": "0.3.0",
+              "from": "mkdirp@0.3.0",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mkdirp/-/mkdirp-0.3.0.tgz"
+            }
+          }
+        },
+        "diff": {
+          "version": "1.0.7",
+          "from": "diff@1.0.7",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/diff/-/diff-1.0.7.tgz"
+        },
+        "debug": {
+          "version": "2.1.0",
+          "from": "debug@*",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/debug/-/debug-2.1.0.tgz",
+          "dependencies": {
+            "ms": {
+              "version": "0.6.2",
+              "from": "ms@0.6.2",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/ms/-/ms-0.6.2.tgz"
+            }
+          }
+        },
+        "mkdirp": {
+          "version": "0.3.5",
+          "from": "mkdirp@0.3.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mkdirp/-/mkdirp-0.3.5.tgz"
+        },
+        "glob": {
+          "version": "3.2.3",
+          "from": "glob@3.2.3",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/glob/-/glob-3.2.3.tgz",
+          "dependencies": {
+            "minimatch": {
+              "version": "0.2.14",
+              "from": "minimatch@~0.2.11",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/minimatch/-/minimatch-0.2.14.tgz",
+              "dependencies": {
+                "lru-cache": {
+                  "version": "2.5.0",
+                  "from": "lru-cache@2",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/lru-cache/-/lru-cache-2.5.0.tgz"
+                },
+                "sigmund": {
+                  "version": "1.0.0",
+                  "from": "sigmund@~1.0.0",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/sigmund/-/sigmund-1.0.0.tgz"
+                }
+              }
+            },
+            "graceful-fs": {
+              "version": "2.0.3",
+              "from": "graceful-fs@~2.0.0",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/graceful-fs/-/graceful-fs-2.0.3.tgz"
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@2"
+            }
+          }
+        }
+      }
+    },
+    "grunt": {
+      "version": "0.4.4",
+      "from": "grunt@0.4.4",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/grunt/-/grunt-0.4.4.tgz",
+      "dependencies": {
+        "async": {
+          "version": "0.1.22",
+          "from": "async@0.1.x",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/async/-/async-0.1.22.tgz"
+        },
+        "coffee-script": {
+          "version": "1.3.3",
+          "from": "coffee-script@~1.3.3",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/coffee-script/-/coffee-script-1.3.3.tgz"
+        },
+        "colors": {
+          "version": "0.6.2",
+          "from": "colors@~0.6.2",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/colors/-/colors-0.6.2.tgz"
+        },
+        "dateformat": {
+          "version": "1.0.2-1.2.3",
+          "from": "dateformat@1.0.2-1.2.3",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/dateformat/-/dateformat-1.0.2-1.2.3.tgz"
+        },
+        "eventemitter2": {
+          "version": "0.4.14",
+          "from": "eventemitter2@0.4.14",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/eventemitter2/-/eventemitter2-0.4.14.tgz"
+        },
+        "findup-sync": {
+          "version": "0.1.3",
+          "from": "findup-sync@~0.1.2",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/findup-sync/-/findup-sync-0.1.3.tgz",
+          "dependencies": {
+            "glob": {
+              "version": "3.2.11",
+              "from": "glob@~3.2.9",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/glob/-/glob-3.2.11.tgz",
+              "dependencies": {
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@2",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/inherits/-/inherits-2.0.1.tgz"
+                },
+                "minimatch": {
+                  "version": "0.3.0",
+                  "from": "minimatch@0.3",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/minimatch/-/minimatch-0.3.0.tgz",
+                  "dependencies": {
+                    "lru-cache": {
+                      "version": "2.5.0",
+                      "from": "lru-cache@2",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/lru-cache/-/lru-cache-2.5.0.tgz"
+                    },
+                    "sigmund": {
+                      "version": "1.0.0",
+                      "from": "sigmund@~1.0.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/sigmund/-/sigmund-1.0.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "lodash": {
+              "version": "2.4.1",
+              "from": "lodash@~2.4.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/lodash/-/lodash-2.4.1.tgz"
+            }
+          }
+        },
+        "glob": {
+          "version": "3.1.21",
+          "from": "glob@~3.1.21",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/glob/-/glob-3.1.21.tgz",
+          "dependencies": {
+            "graceful-fs": {
+              "version": "1.2.3",
+              "from": "graceful-fs@~1.2.0",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/graceful-fs/-/graceful-fs-1.2.3.tgz"
+            },
+            "inherits": {
+              "version": "1.0.0",
+              "from": "inherits@1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/inherits/-/inherits-1.0.0.tgz"
+            }
+          }
+        },
+        "hooker": {
+          "version": "0.2.3",
+          "from": "hooker@~0.2.3",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/hooker/-/hooker-0.2.3.tgz"
+        },
+        "iconv-lite": {
+          "version": "0.2.11",
+          "from": "iconv-lite@~0.2.11",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/iconv-lite/-/iconv-lite-0.2.11.tgz"
+        },
+        "minimatch": {
+          "version": "0.2.14",
+          "from": "minimatch@~0.2.11",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/minimatch/-/minimatch-0.2.14.tgz",
+          "dependencies": {
+            "lru-cache": {
+              "version": "2.5.0",
+              "from": "lru-cache@2",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/lru-cache/-/lru-cache-2.5.0.tgz"
+            },
+            "sigmund": {
+              "version": "1.0.0",
+              "from": "sigmund@~1.0.0",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/sigmund/-/sigmund-1.0.0.tgz"
+            }
+          }
+        },
+        "nopt": {
+          "version": "1.0.10",
+          "from": "nopt@~1.0.10",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/nopt/-/nopt-1.0.10.tgz",
+          "dependencies": {
+            "abbrev": {
+              "version": "1.0.5",
+              "from": "abbrev@1"
+            }
+          }
+        },
+        "rimraf": {
+          "version": "2.2.8",
+          "from": "rimraf@~2.2.0"
+        },
+        "lodash": {
+          "version": "0.9.2",
+          "from": "lodash@~0.9.2",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/lodash/-/lodash-0.9.2.tgz"
+        },
+        "underscore.string": {
+          "version": "2.2.1",
+          "from": "underscore.string@~2.2.1",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/underscore.string/-/underscore.string-2.2.1.tgz"
+        },
+        "which": {
+          "version": "1.0.5",
+          "from": "which@~1.0.5"
+        },
+        "js-yaml": {
+          "version": "2.0.5",
+          "from": "js-yaml@~2.0.5",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/js-yaml/-/js-yaml-2.0.5.tgz",
+          "dependencies": {
+            "argparse": {
+              "version": "0.1.15",
+              "from": "argparse@~ 0.1.11",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/argparse/-/argparse-0.1.15.tgz",
+              "dependencies": {
+                "underscore": {
+                  "version": "1.4.4",
+                  "from": "underscore@~1.4.3",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/underscore/-/underscore-1.4.4.tgz"
+                },
+                "underscore.string": {
+                  "version": "2.3.3",
+                  "from": "underscore.string@~2.3.1",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/underscore.string/-/underscore.string-2.3.3.tgz"
+                }
+              }
+            },
+            "esprima": {
+              "version": "1.0.4",
+              "from": "esprima@~1.0.2",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/esprima/-/esprima-1.0.4.tgz"
+            }
+          }
+        },
+        "exit": {
+          "version": "0.1.2",
+          "from": "exit@~0.1.1",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/exit/-/exit-0.1.2.tgz"
+        },
+        "getobject": {
+          "version": "0.1.0",
+          "from": "getobject@~0.1.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/getobject/-/getobject-0.1.0.tgz"
+        },
+        "grunt-legacy-util": {
+          "version": "0.1.2",
+          "from": "grunt-legacy-util@~0.1.2",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/grunt-legacy-util/-/grunt-legacy-util-0.1.2.tgz"
+        }
+      }
+    },
+    "grunt-mocha-test": {
+      "version": "0.10.2",
+      "from": "grunt-mocha-test@0.10.2",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/grunt-mocha-test/-/grunt-mocha-test-0.10.2.tgz",
+      "dependencies": {
+        "mocha": {
+          "version": "1.18.2",
+          "from": "mocha@~1.18.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mocha/-/mocha-1.18.2.tgz",
+          "dependencies": {
+            "commander": {
+              "version": "2.0.0",
+              "from": "commander@2.0.0",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/commander/-/commander-2.0.0.tgz"
+            },
+            "growl": {
+              "version": "1.7.0",
+              "from": "growl@1.7.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/growl/-/growl-1.7.0.tgz"
+            },
+            "jade": {
+              "version": "0.26.3",
+              "from": "jade@0.26.3",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/jade/-/jade-0.26.3.tgz",
+              "dependencies": {
+                "commander": {
+                  "version": "0.6.1",
+                  "from": "commander@0.6.1",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/commander/-/commander-0.6.1.tgz"
+                },
+                "mkdirp": {
+                  "version": "0.3.0",
+                  "from": "mkdirp@0.3.0",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mkdirp/-/mkdirp-0.3.0.tgz"
+                }
+              }
+            },
+            "diff": {
+              "version": "1.0.7",
+              "from": "diff@1.0.7",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/diff/-/diff-1.0.7.tgz"
+            },
+            "debug": {
+              "version": "2.1.0",
+              "from": "debug@*",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/debug/-/debug-2.1.0.tgz",
+              "dependencies": {
+                "ms": {
+                  "version": "0.6.2",
+                  "from": "ms@0.6.2",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/ms/-/ms-0.6.2.tgz"
+                }
+              }
+            },
+            "mkdirp": {
+              "version": "0.3.5",
+              "from": "mkdirp@0.3.5",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mkdirp/-/mkdirp-0.3.5.tgz"
+            },
+            "glob": {
+              "version": "3.2.3",
+              "from": "glob@3.2.3",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/glob/-/glob-3.2.3.tgz",
+              "dependencies": {
+                "minimatch": {
+                  "version": "0.2.14",
+                  "from": "minimatch@~0.2.11",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/minimatch/-/minimatch-0.2.14.tgz",
+                  "dependencies": {
+                    "lru-cache": {
+                      "version": "2.5.0",
+                      "from": "lru-cache@2",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/lru-cache/-/lru-cache-2.5.0.tgz"
+                    },
+                    "sigmund": {
+                      "version": "1.0.0",
+                      "from": "sigmund@~1.0.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/sigmund/-/sigmund-1.0.0.tgz"
+                    }
+                  }
+                },
+                "graceful-fs": {
+                  "version": "2.0.3",
+                  "from": "graceful-fs@~2.0.0",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/graceful-fs/-/graceful-fs-2.0.3.tgz"
+                },
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@2"
+                }
+              }
+            }
+          }
+        },
+        "hooker": {
+          "version": "0.2.3",
+          "from": "hooker@~0.2.3",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/hooker/-/hooker-0.2.3.tgz"
+        },
+        "fs-extra": {
+          "version": "0.8.1",
+          "from": "fs-extra@~0.8.1",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/fs-extra/-/fs-extra-0.8.1.tgz",
+          "dependencies": {
+            "ncp": {
+              "version": "0.4.2",
+              "from": "ncp@~0.4.2",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/ncp/-/ncp-0.4.2.tgz"
+            },
+            "mkdirp": {
+              "version": "0.3.5",
+              "from": "mkdirp@0.3.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mkdirp/-/mkdirp-0.3.5.tgz"
+            },
+            "jsonfile": {
+              "version": "1.1.1",
+              "from": "jsonfile@~1.1.0",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/jsonfile/-/jsonfile-1.1.1.tgz"
+            },
+            "rimraf": {
+              "version": "2.2.8",
+              "from": "rimraf@~2.2.0"
+            }
+          }
+        }
+      }
+    },
+    "supertest": {
+      "version": "0.14.0",
+      "from": "supertest@0.14.0",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/supertest/-/supertest-0.14.0.tgz",
+      "dependencies": {
+        "superagent": {
+          "version": "0.19.0",
+          "from": "superagent@0.19.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/superagent/-/superagent-0.19.0.tgz",
+          "dependencies": {
+            "qs": {
+              "version": "1.2.0",
+              "from": "qs@1.2.0",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/qs/-/qs-1.2.0.tgz"
+            },
+            "formidable": {
+              "version": "1.0.14",
+              "from": "formidable@1.0.14",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/formidable/-/formidable-1.0.14.tgz"
+            },
+            "mime": {
+              "version": "1.2.11",
+              "from": "mime@1.2.11",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/mime/-/mime-1.2.11.tgz"
+            },
+            "component-emitter": {
+              "version": "1.1.2",
+              "from": "component-emitter@1.1.2",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/component-emitter/-/component-emitter-1.1.2.tgz"
+            },
+            "methods": {
+              "version": "1.0.1",
+              "from": "methods@1.0.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/methods/-/methods-1.0.1.tgz"
+            },
+            "cookiejar": {
+              "version": "2.0.1",
+              "from": "cookiejar@2.0.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/cookiejar/-/cookiejar-2.0.1.tgz"
+            },
+            "debug": {
+              "version": "1.0.4",
+              "from": "debug@~1.0.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/debug/-/debug-1.0.4.tgz",
+              "dependencies": {
+                "ms": {
+                  "version": "0.6.2",
+                  "from": "ms@0.6.2",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/ms/-/ms-0.6.2.tgz"
+                }
+              }
+            },
+            "reduce-component": {
+              "version": "1.0.1",
+              "from": "reduce-component@1.0.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/reduce-component/-/reduce-component-1.0.1.tgz"
+            },
+            "extend": {
+              "version": "1.2.1",
+              "from": "extend@~1.2.1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/extend/-/extend-1.2.1.tgz"
+            },
+            "form-data": {
+              "version": "0.1.3",
+              "from": "form-data@0.1.3",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/form-data/-/form-data-0.1.3.tgz",
+              "dependencies": {
+                "combined-stream": {
+                  "version": "0.0.7",
+                  "from": "combined-stream@~0.0.4",
+                  "dependencies": {
+                    "delayed-stream": {
+                      "version": "0.0.5",
+                      "from": "delayed-stream@0.0.5"
+                    }
+                  }
+                },
+                "async": {
+                  "version": "0.9.0",
+                  "from": "async@~0.9.0"
+                }
+              }
+            },
+            "readable-stream": {
+              "version": "1.0.27-1",
+              "from": "readable-stream@1.0.27-1",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/readable-stream/-/readable-stream-1.0.27-1.tgz",
+              "dependencies": {
+                "core-util-is": {
+                  "version": "1.0.1",
+                  "from": "core-util-is@~1.0.0"
+                },
+                "isarray": {
+                  "version": "0.0.1",
+                  "from": "isarray@0.0.1"
+                },
+                "string_decoder": {
+                  "version": "0.10.31",
+                  "from": "string_decoder@~0.10.x"
+                },
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@~2.0.1"
+                }
+              }
+            }
+          }
+        },
+        "methods": {
+          "version": "1.1.0",
+          "from": "methods@1.1.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/methods/-/methods-1.1.0.tgz"
+        }
+      }
+    },
+    "grunt-contrib-jshint": {
+      "version": "0.9.2",
+      "from": "grunt-contrib-jshint@0.9.2",
+      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/grunt-contrib-jshint/-/grunt-contrib-jshint-0.9.2.tgz",
+      "dependencies": {
+        "jshint": {
+          "version": "2.4.4",
+          "from": "jshint@~2.4.0",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/jshint/-/jshint-2.4.4.tgz",
+          "dependencies": {
+            "shelljs": {
+              "version": "0.1.4",
+              "from": "shelljs@0.1.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/shelljs/-/shelljs-0.1.4.tgz"
+            },
+            "underscore": {
+              "version": "1.4.4",
+              "from": "underscore@~1.4.3",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/underscore/-/underscore-1.4.4.tgz"
+            },
+            "cli": {
+              "version": "0.4.5",
+              "from": "cli@0.4.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/cli/-/cli-0.4.5.tgz",
+              "dependencies": {
+                "glob": {
+                  "version": "4.0.6",
+                  "from": "glob@>= 3.1.4",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/glob/-/glob-4.0.6.tgz",
+                  "dependencies": {
+                    "graceful-fs": {
+                      "version": "3.0.4",
+                      "from": "graceful-fs@^3.0.2",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/graceful-fs/-/graceful-fs-3.0.4.tgz"
+                    },
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@2",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/inherits/-/inherits-2.0.1.tgz"
+                    },
+                    "minimatch": {
+                      "version": "1.0.0",
+                      "from": "minimatch@^1.0.0",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/minimatch/-/minimatch-1.0.0.tgz",
+                      "dependencies": {
+                        "lru-cache": {
+                          "version": "2.5.0",
+                          "from": "lru-cache@2",
+                          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/lru-cache/-/lru-cache-2.5.0.tgz"
+                        },
+                        "sigmund": {
+                          "version": "1.0.0",
+                          "from": "sigmund@~1.0.0",
+                          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/sigmund/-/sigmund-1.0.0.tgz"
+                        }
+                      }
+                    },
+                    "once": {
+                      "version": "1.3.1",
+                      "from": "once@^1.3.0",
+                      "dependencies": {
+                        "wrappy": {
+                          "version": "1.0.1",
+                          "from": "wrappy@1"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "minimatch": {
+              "version": "0.4.0",
+              "from": "minimatch@0.x.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/minimatch/-/minimatch-0.4.0.tgz",
+              "dependencies": {
+                "lru-cache": {
+                  "version": "2.5.0",
+                  "from": "lru-cache@2",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/lru-cache/-/lru-cache-2.5.0.tgz"
+                },
+                "sigmund": {
+                  "version": "1.0.0",
+                  "from": "sigmund@~1.0.0",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/sigmund/-/sigmund-1.0.0.tgz"
+                }
+              }
+            },
+            "htmlparser2": {
+              "version": "3.3.0",
+              "from": "htmlparser2@3.3.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/htmlparser2/-/htmlparser2-3.3.0.tgz",
+              "dependencies": {
+                "domhandler": {
+                  "version": "2.1.0",
+                  "from": "domhandler@2.1",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/domhandler/-/domhandler-2.1.0.tgz"
+                },
+                "domutils": {
+                  "version": "1.1.6",
+                  "from": "domutils@1.1",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/domutils/-/domutils-1.1.6.tgz"
+                },
+                "domelementtype": {
+                  "version": "1.1.3",
+                  "from": "domelementtype@1",
+                  "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/domelementtype/-/domelementtype-1.1.3.tgz"
+                },
+                "readable-stream": {
+                  "version": "1.0.33",
+                  "from": "readable-stream@1.0",
+                  "dependencies": {
+                    "core-util-is": {
+                      "version": "1.0.1",
+                      "from": "core-util-is@~1.0.0"
+                    },
+                    "isarray": {
+                      "version": "0.0.1",
+                      "from": "isarray@0.0.1"
+                    },
+                    "string_decoder": {
+                      "version": "0.10.31",
+                      "from": "string_decoder@~0.10.x"
+                    },
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@~2.0.1",
+                      "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/inherits/-/inherits-2.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "console-browserify": {
+              "version": "0.1.6",
+              "from": "console-browserify@0.1.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/console-browserify/-/console-browserify-0.1.6.tgz"
+            },
+            "exit": {
+              "version": "0.1.2",
+              "from": "exit@0.1.x",
+              "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/exit/-/exit-0.1.2.tgz"
+            }
+          }
+        },
+        "hooker": {
+          "version": "0.2.3",
+          "from": "hooker@~0.2.3",
+          "resolved": "http://artifactory.blinkbox.local/artifactory/api/npm/npmjs/hooker/-/hooker-0.2.3.tgz"
+        }
+      }
+    }
+  }
+}
