@@ -8,7 +8,7 @@ Source2: logrotate
 Group: Applications/Internet
 License: Various
 Vendor: blinkbox books
-BuildArch: noarch
+BuildArch: x86_64
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: nodejs >= 0.10.21
 
