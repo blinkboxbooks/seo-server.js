@@ -14,7 +14,7 @@ rpmdev-setuptree
 
 cd $SSA_HOME
 
-# gather CWA version and build information
+# gather SEO-SERVER version and build information
 SSA_FULL_VERSION=$(grep version dist/package.json | awk -F\" '{print $(NF-1)}')
 SSA_VERSION=$(echo $SSA_FULL_VERSION | cut -d'-' -f1)
 SSA_BUILD_NUMBER=$(echo $SSA_FULL_VERSION | cut -d'-' -f2)
@@ -28,11 +28,11 @@ cp rpm/ssa.spec $RPM_HOME/SPECS
 cd $RPM_HOME/SOURCES
 tar czf seo-server-app-${SSA_VERSION}.tar.gz seo-server-app-${SSA_VERSION}/
 
-# build the RPM
-echo -e 'T3amcI7y@BbB\n' | setsid rpmbuild --sign -ba $RPM_HOME/SPECS/ssa.spec --define "_gpg_path /vagrant/gpg.books.teamcity.dev" --define "_gpgbin /usr/bin/gpg" --define "_signature gpg" --define "_gpg_name TeamCity (Dirty Development Signing Key) <tm-books-itops@blinkbox.com>" --define "version $SSA_VERSION" --define "release $SSA_BUILD_NUMBER"
+# build the RPM, ignore invalid rpaths (PhantomJS binary, which contains an invalid RPATH is standalone and should not pose any issues):
+echo -e 'T3amcI7y@BbB\n' | QA_RPATHS=$[ 0x0002 ] setsid rpmbuild --sign -ba $RPM_HOME/SPECS/ssa.spec --define "_gpg_path /vagrant/gpg.books.teamcity.dev" --define "_gpgbin /usr/bin/gpg" --define "_signature gpg" --define "_gpg_name TeamCity (Dirty Development Signing Key) <tm-books-itops@blinkbox.com>" --define "version $SSA_VERSION" --define "release $SSA_BUILD_NUMBER"
 
 # copy the resulting RPM into the seo server app rpm folder for CI to pick up
-cp $RPM_HOME/RPMS/noarch/seo-server-app-${SSA_VERSION}-${SSA_BUILD_NUMBER}.noarch.rpm $SSA_HOME/rpm
+cp $RPM_HOME/RPMS/x86_64/seo-server-app-${SSA_VERSION}-${SSA_BUILD_NUMBER}.x86_64.rpm $SSA_HOME/rpm
 
 # Show RPM summary
-rpm -qip $SSA_HOME/rpm/seo-server-app-${SSA_VERSION}-${SSA_BUILD_NUMBER}.noarch.rpm
+rpm -qip $SSA_HOME/rpm/seo-server-app-${SSA_VERSION}-${SSA_BUILD_NUMBER}.x86_64.rpm
