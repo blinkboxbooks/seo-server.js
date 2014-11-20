@@ -7,6 +7,7 @@
   "checkCompleteTimeDiff": 300,
   "checkCompleteTimeout": 10000,
   "maxProcesses": 4,
+  "phantomMaxBuffer": 500000,
   "phantomTimeout": 30000,
   "graylog": {
     "host": "",
